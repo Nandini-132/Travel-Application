@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Atlas Escape — Travel Explorer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header class="navbar">
+    <div class="nav-container">
+
+      <a href="#" class="logo">
+        ATLAS<span>.</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#destinations">Destinations</a>
+        <a href="#weather">Weather</a>
+        <a href="#places">Places</a>
+        <a href="#planner">Trip Planner</a>
+      </nav>
+
+      <button class="location-button">
+        <span>⌖</span>
+        My Location
+      </button>
+
+    </div>
+</header>
+
+  <main>
+
+    <section class="hero">
+
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+      >
+        <source
+          src="https://cdn.coverr.co/videos/coverr-aerial-view-of-a-beautiful-city-1570/1080p.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <p class="eyebrow">EXPLORE WITHOUT LIMITS</p>
+
+        <h1>
+          Go somewhere
+          <em>beautiful.</em>
+        </h1>
+
+        <p class="hero-description">
+          Discover remarkable destinations, check the weather,
+          find unforgettable places and create your perfect trip.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#destinations" class="primary-button">
+            Explore destinations
+            <span>↗</span>
+          </a>
+
+          <a href="#planner" class="secondary-button">
+            Plan my trip
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-bottom">
+
+        <span>SCROLL TO EXPLORE</span>
+
+        <span class="scroll-line"></span>
+
+        <span>WORLDWIDE</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="intro section">
+
+      <div class="section-label">
+        <span>01</span>
+        <span>DISCOVER</span>
+      </div>
+
+      <div class="intro-content">
+
+        <h2>
+          The world is
+          <em>waiting.</em>
+        </h2>
+
+        <p>
+          From quiet streets in Kyoto to sun-soaked beaches in Cape Town,
+          explore places that deserve a spot on your map.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= DESTINATIONS ================= -->
+
+    <section class="destinations section" id="destinations">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow dark">DESTINATIONS</p>
+
+          <h2>
+            Find your
+            <em>next place.</em>
+          </h2>
+        </div>
+
+        <p class="heading-description">
+          Browse our hand-picked destinations and discover
+          somewhere new to explore.
+        </p>
+
+      </div>
+
+
+      <!-- SEARCH -->
+
+      <div class="search-area">
+
+        <div class="search-box">
+
+          <span class="search-icon">⌕</span>
+
+          <input
+            type="text"
+            placeholder="Search destinations..."
+          />
+
+        </div>
+
+        <div class="filters">
+
+          <button class="filter active">All</button>
+          <button class="filter">Asia</button>
+          <button class="filter">Europe</button>
+          <button class="filter">Africa</button>
+          <button class="filter">Americas</button>
+          <button class="filter">Oceania</button>
+
+        </div>
+
+      </div>
+
+
+      <!-- DESTINATION CARDS -->
+
+      <div class="destination-grid">
+
+
+        <!-- CARD 1 -->
+
+        <article class="destination-card">
+
+          <div class="card-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=85"
+              alt="Kyoto Japan"
+            />
+
+            <span class="card-region">ASIA</span>
+
+            <button class="favorite">♡</button>
+
+          </div>
+
+          <div class="card-content">
+
+            <div class="card-title-row">
+
+              <h3>Kyoto</h3>
+
+              <span>Japan</span>
+
+            </div>
+
+            <p>
+              Ancient temples, peaceful gardens and
+              beautiful traditional streets.
+            </p>
+
+            <div class="card-footer">
+
+              <span>BEST FOR</span>
+
+              <strong>Culture · Food · History</strong>
+
+              <span class="arrow">↗</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- CARD 2 -->
+
+        <article class="destination-card">
+
+          <div class="card-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1200&q=85"
+              alt="Lisbon Portugal"
+            />
+
+            <span class="card-region">EUROPE</span>
+
+            <button class="favorite">♡</button>
+
+          </div>
+
+          <div class="card-content">
+
+            <div class="card-title-row">
+
+              <h3>Lisbon</h3>
+
+              <span>Portugal</span>
+
+            </div>
+
+            <p>
+              Colorful streets, Atlantic sunsets and
+              unforgettable local cuisine.
+            </p>
+
+            <div class="card-footer">
+
+              <span>BEST FOR</span>
+
+              <strong>Food · Beaches · Nightlife</strong>
+
+              <span class="arrow">↗</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- CARD 3 -->
+
+        <article class="destination-card">
+
+          <div class="card-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85"
+              alt="Cape Town South Africa"
+            />
+
+            <span class="card-region">AFRICA</span>
+
+            <button class="favorite">♡</button>
+
+          </div>
+
+          <div class="card-content">
+
+            <div class="card-title-row">
+
+              <h3>Cape Town</h3>
+
+              <span>South Africa</span>
+
+            </div>
+
+            <p>
+              Dramatic mountains, incredible beaches and
+              vibrant city life.
+            </p>
+
+            <div class="card-footer">
+
+              <span>BEST FOR</span>
+
+              <strong>Nature · Adventure · Wine</strong>
+
+              <span class="arrow">↗</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- CARD 4 -->
+
+        <article class="destination-card">
+
+          <div class="card-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=1200&q=85"
+              alt="New York City"
+            />
+
+            <span class="card-region">AMERICAS</span>
+
+            <button class="favorite">♡</button>
+
+          </div>
+
+          <div class="card-content">
+
+            <div class="card-title-row">
+
+              <h3>New York</h3>
+
+              <span>USA</span>
+
+            </div>
+
+            <p>
+              Iconic neighborhoods, world-class museums
+              and endless energy.
+            </p>
+
+            <div class="card-footer">
+
+              <span>BEST FOR</span>
+
+              <strong>City · Shopping · Culture</strong>
+
+              <span class="arrow">↗</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- CARD 5 -->
+
+        <article class="destination-card">
+
+          <div class="card-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1514395462725-fb4566210144?auto=format&fit=crop&w=1200&q=85"
+              alt="Melbourne Australia"
+            />
+
+            <span class="card-region">OCEANIA</span>
+
+            <button class="favorite">♡</button>
+
+          </div>
+
+          <div class="card-content">
+
+            <div class="card-title-row">
+
+              <h3>Melbourne</h3>
+
+              <span>Australia</span>
+
+            </div>
+
+            <p>
+              Creative neighborhoods, great coffee and
+              a relaxed coastal atmosphere.
+            </p>
+
+            <div class="card-footer">
+
+              <span>BEST FOR</span>
+
+              <strong>Coffee · Art · Beaches</strong>
+
+              <span class="arrow">↗</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- CARD 6 -->
+
+        <article class="destination-card">
+
+          <div class="card-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=85"
+              alt="Istanbul Turkey"
+            />
+
+            <span class="card-region">EUROPE</span>
+
+            <button class="favorite">♡</button>
+
+          </div>
+
+          <div class="card-content">
+
+            <div class="card-title-row">
+
+              <h3>Istanbul</h3>
+
+              <span>Türkiye</span>
+
+            </div>
+
+            <p>
+              A fascinating crossroads of history,
+              architecture and culture.
+            </p>
+
+            <div class="card-footer">
+
+              <span>BEST FOR</span>
+
+              <strong>History · Food · Architecture</strong>
+
+              <span class="arrow">↗</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= WEATHER ================= -->
+
+    <section class="weather-section section" id="weather">
+
+      <div class="weather-intro">
+
+        <p class="eyebrow">RIGHT NOW</p>
+
+        <h2>
+          What's the weather
+          <em>like there?</em>
+        </h2>
+
+        <p>
+          Check live conditions before you decide where
+          your next adventure should take you.
+        </p>
+
+        <button class="primary-button dark-button">
+          Use my location
+          <span>⌖</span>
+        </button>
+
+      </div>
+
+
+      <div class="weather-card">
+
+        <div class="weather-top">
+
+          <div>
+            <span class="weather-label">CURRENT WEATHER</span>
+            <h3>Kyoto, Japan</h3>
+          </div>
+
+          <span class="weather-icon">☀</span>
+
+        </div>
+
+        <div class="temperature">
+          24°
+        </div>
+
+        <p class="weather-status">
+          Clear sky
+        </p>
+
+        <div class="weather-details">
+
+          <div>
+            <span>FEELS LIKE</span>
+            <strong>25°C</strong>
+          </div>
+
+          <div>
+            <span>HUMIDITY</span>
+            <strong>64%</strong>
+          </div>
+
+          <div>
+            <span>WIND</span>
+            <strong>8 km/h</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= FAMOUS PLACES ================= -->
+
+    <section class="places section" id="places">
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow dark">
+            DON'T MISS
+          </p>
+
+          <h2>
+            Places worth
+            <em>remembering.</em>
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="places-grid">
+
+
+        <article class="place-card large">
+
+          <img
+            src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1400&q=85"
+            alt="Fushimi Inari Shrine"
+          />
+
+          <div class="place-overlay">
+
+            <span>01</span>
+
+            <div>
+              <h3>Fushimi Inari</h3>
+
+              <p>
+                Kyoto, Japan
+              </p>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="place-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&w=900&q=85"
+            alt="Kiyomizu-dera temple"
+          />
+
+          <div class="place-overlay">
+
+            <span>02</span>
+
+            <div>
+              <h3>Kiyomizu-dera</h3>
+
+              <p>
+                Historic temple
+              </p>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="place-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=900&q=85"
+            alt="Arashiyama Bamboo Grove"
+          />
+
+          <div class="place-overlay">
+
+            <span>03</span>
+
+            <div>
+              <h3>Arashiyama</h3>
+
+              <p>
+                Bamboo forest
+              </p>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= AI PLANNER ================= -->
+
+    <section class="planner section" id="planner">
+
+      <div class="planner-copy">
+
+        <p class="eyebrow">YOUR PERSONAL GUIDE</p>
+
+        <h2>
+          Plan it
+          <em>your way.</em>
+        </h2>
+
+        <p>
+          Tell our AI assistant where you want to go,
+          how long you have and what you love doing.
+          We'll turn it into a practical day-by-day itinerary.
+        </p>
+
+      </div>
+
+
+      <div class="planner-card">
+
+        <div class="planner-header">
+
+          <div class="ai-avatar">
+            ✦
+          </div>
+
+          <div>
+
+            <strong>Atlas AI</strong>
+
+            <span>Your travel companion</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="chat-area">
+
+          <div class="message assistant">
+            Hi! Where are you thinking of going?
+            Tell me your destination and I'll help
+            you plan the perfect trip.
+          </div>
+
+          <div class="message user">
+            I want to spend 4 days in Kyoto.
+            I love food and traditional culture.
+          </div>
+
+          <div class="message assistant">
+            Great choice. I'd recommend exploring
+            Fushimi Inari early in the morning,
+            followed by a traditional tea experience...
+          </div>
+
+        </div>
+
+
+        <div class="chat-input">
+
+          <input
+            type="text"
+            placeholder="Ask Atlas anything..."
+          />
+
+          <button>
+            →
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+      <div class="footer-top">
+
+        <div>
+
+          <a href="#" class="logo footer-logo">
+            ATLAS<span>.</span>
+          </a>
+
+          <p>
+            Go somewhere beautiful.
+          </p>
+
+        </div>
+
+        <div class="footer-links">
+
+          <a href="#destinations">Destinations</a>
+          <a href="#weather">Weather</a>
+          <a href="#places">Places</a>
+          <a href="#planner">AI Planner</a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <span>© 2026 Atlas Escape</span>
+
+        <span>Made for curious travellers.</span>
+
+      </div>
+
+    </footer>
+
+  </main>
+
+</body>
+</html>
